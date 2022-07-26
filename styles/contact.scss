@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  @font-face {
+    font-family: Montserrat;
+    src: url(/Montserrat/static/Montserrat-Bold.ttf);
+  }
+
+  body {
+    background-color: #000417;
+    border-radius: 50px;
+    height: calc(100vh - 82px);
+  }
+  
+  .nav-container { 
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 82px;
+    background-color: #0094FF;
+    border-radius: 50px;
+    margin-top: 0.5em;
+    margin-bottom: 1rem;
+  }
+  
+  .wrapper {
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px;
+
+    .logo, ul {
+        display: flex;
+        margin: 8rem;
+      }
+        li {
+        list-style: none;
+        margin-right: 7rem;
+      }
+
+        li, a{
+        font-family: Montserrat;
+        font-size: 1.2vw;
+        color: #000417;
+        text-decoration: none;
+
+        :active {
+            color: white;
+        }
+
+        :hover {
+            transition: 0.7s;
+            color:white;
+        }
+      }
+      
+        .logo a {
+        font-size: 30px;
+        font-family: Montserrat;
+        font-size: 2vw;
+        margin-left: 6rem;
+        color: #000417;
+      }
+    }
+
+    .content-container {  
+        height: calc(100vh - 82px);
+        display: block;
+        font-family: Montserrat;
+        color: #fff;
+    
+    
+        .content1 {
+          background-color: #000417;
+          background-image: url(/img/fp-bg.svg);
+          background-repeat: no-repeat;
+          background-position-x: -10vw;
+          background-position-y: 47vh;
+          border-radius: 50px;
+
+          h1{
+            text-align: center;
+            font-size: 48px;
+            margin: 4rem auto;
+          }
+
+          img {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 0rem auto 0rem auto;
+          }
+        }  
+
+        .socmed {
+          margin-top: 20vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+      }
+
+       .soc-profile {
+          margin: 4rem 3rem auto 5rem;
+
+          img {
+              width: 90px;
+              height: 90px;
+          }
+        }
+
+        .btm{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin: 30rem auto 5rem auto;
+        }
+
+        .img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          img{
+            margin: 1rem auto;
+          }
+        }
+
+        .content2 {
+          background-color: #002F5C;
+          border-radius: 50px;
+          height:100vh;
+
+          .frm-msg {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+              h1 {
+                text-align: left;
+                margin: 10rem 60rem 1.5rem 10rem;
+                font-size: 40px;
+              }
+          }
+
+          .form-container {
+            height: calc(100vh - 450px);
+            background-color: #00439D;
+            margin: 1rem 10rem auto 10rem;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(/img/fp-bg.svg);
+            background-repeat: no-repeat;
+            background-position-x: 50vw;
+            background-position-y: 20vh;
+
+            .nwsl-signup {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: left;
+              color: white;
+
+              img{
+                width: 350px;
+                height: 350px;
+                margin-right: 10rem;
+              }
+            }
+
+            legend {
+              margin: 2rem 0 0 0;
+              display: block;
+              color:white;
+              border-radius: 40px;
+              font-size: 25px;
+            }
+
+            fieldset {
+              border-style: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+
+            }
+            
+            input[type=text], input[type=email] {
+              margin: 2rem auto 0rem;
+              padding: 1.25rem;
+              height: 7vh;
+              width: 50rem;
+              background-color: white;
+              border-radius: 40px;
+              font-size: 32px;
+              font-family: Montserrat;
+            }
+
+           input[type=submit] {
+              margin: 2rem auto 2rem;
+              height: 7vh;
+              width: 40rem;
+              background-color:#0057FF;
+              text-align: center;
+              border-radius: 40px;
+              font-size: 32px;
+              font-family: Montserrat;
+              color: #fff;
+
+              :hover {
+                transition: 1.7s;
+                background-color: white;
+                animation-name: color-change;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                color: black;
+              }
+
+              @keyframes color-change {
+                0% {
+                    background-color: #2C3333;
+                } 
+                
+                25% {
+                    background-color: #395B64;
+                } 
+            
+                50% {
+                    background-color: #A5C9CA;
+                } 
+            
+                75% {
+                    background-color: #E7F6F2;
+                } 
+            
+                100% {
+                    background-color: #2C3333;
+                } 
+              }  
+            }
+          }
+       }
+    }

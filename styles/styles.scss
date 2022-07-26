@@ -1,0 +1,115 @@
+*  {
+    box-sizing: border-box;
+    width: auto;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+body{
+    background-color: #000417;
+    background-image: url(/img/fp-bg.svg);
+    background-repeat: no-repeat;
+    background-position-x: -10vw;
+    background-position-y: 65vh;
+    border-radius: 50px;
+    height: calc(100vh - 82px);
+    overflow: hidden;
+}
+
+.img{
+    margin-top: 10vh;
+}
+
+.nav-container{
+height: 82px;
+background-color: #0094FF;
+border-radius: 50px;
+margin-top: 0.5em;
+}
+ 
+.wrapper{
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px;
+
+    .logo, ul{
+        display: flex;
+        margin: 8rem;
+    }
+
+    li{
+        list-style: none;
+        margin-right: 7rem;
+    }
+
+    li, a{
+        font-family: Montserrat;
+        font-size: 1.2vw;
+        color: #000417;
+        text-decoration: none;
+
+        :active {
+            color: white;
+        }
+
+        :hover {
+            transition: 0.7s;
+            color:white;
+        }
+    }
+
+    .logo a {
+        font-size: 30px;
+        font-family: Montserrat;
+        font-size: 2vw;
+        margin-left: 6rem;
+        color: #000417;
+    }
+}
+
+.message-container {
+    height: calc(100vh - 82px);
+    display: block;
+    justify-content: left;
+    font-family: Montserrat;
+    color: #fff;
+
+    .message h1 {
+        font-size: 3.75vw;
+        margin-top: 15vh;
+        margin-left: 9rem;
+        margin-right: 40rem;
+    }
+
+    .message h2 {
+        font-size: 2vw;
+        margin-top: 2vh;
+        margin-left: 9rem;
+        margin-right: 30rem;
+    }
+}
+
+.button-container {
+    display: flex; 
+    justify-content: right;
+    margin-right: 9vw;
+    margin-top: -40vh;
+    
+    button {
+        font-family: Montserrat;
+        font-size: 1.5vw;
+        background-color: #0094FF;
+        border-radius: 40px;
+        width: 20vw;
+        height: 5vw;
+    }
+}

@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/Montserrat/static/Montserrat-Bold.ttf);
+}
+body {
+  background-color: #000417;
+  border-radius: 50px;
+  height: calc(100vh - 82px);
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 82px;
+  background-color: #0094FF;
+  border-radius: 50px;
+  margin-top: 0.5em;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+}
+nav .logo, nav ul {
+  display: flex;
+  margin: 8rem;
+}
+nav li {
+  list-style: none;
+  margin-right: 7rem;
+}
+nav li, nav a {
+  font-family: Montserrat;
+  font-size: 1.2vw;
+  color: #000417;
+  text-decoration: none;
+}
+nav li :active, nav a :active {
+  color: white;
+}
+nav li :hover, nav a :hover {
+  transition: 0.7s;
+  color: white;
+}
+nav .logo a {
+  font-size: 30px;
+  font-family: Montserrat;
+  font-size: 2vw;
+  margin-left: 6rem;
+  color: #000417;
+}
+
+.content-container {
+  height: calc(100vh - 82px);
+  display: block;
+  font-family: Montserrat;
+  color: #fff;
+}
+.content-container .content1 {
+  background-color: #000417;
+  background-image: url(/img/fp-bg.svg);
+  background-repeat: no-repeat;
+  background-position-x: -10vw;
+  background-position-y: 47vh;
+  border-radius: 50px;
+  height: calc(100vh - 82px);
+}
+.content-container .content1 h1 {
+  margin-top: 25vh;
+  margin-left: 8rem;
+  font-size: 96px;
+  text-transform: uppercase;
+}
+.content-container .content1 h2 {
+  margin-left: 8rem;
+  font-size: 48px;
+}
+.content-container .content1 .img-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.content-container .content1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-container .content2 {
+  background-color: #002F5C;
+  border-radius: 50px;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-container .content2 .message {
+  text-align: left;
+  margin: 0rem 10rem 0px 12rem;
+}
+.content-container .content2 h1 {
+  font-size: 48px;
+}
+.content-container .content2 img {
+  margin-right: 15rem;
+  width: 300px;
+  height: 300px;
+}
+.content-container .content3 {
+  background-color: #002F5C;
+  border-radius: 50px;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-container .content3 .message {
+  text-align: left;
+  margin: 0rem 10rem 0px 12rem;
+}
+.content-container .content3 h1 {
+  font-size: 48px;
+}
+.content-container .content3 img {
+  margin-right: 10rem;
+  width: 300px;
+  height: 300px;
+}
+.content-container .content4 {
+  background-color: #000417;
+  border-radius: 50px;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-container .content4 .message {
+  text-align: left;
+  margin: 0rem 10rem 0px 12rem;
+}
+.content-container .content4 h1 {
+  font-size: 48px;
+}
+.content-container .content4 img {
+  margin-right: 10rem;
+  width: 300px;
+  height: 300px;
+}
+.content-container .content5 {
+  background-color: #002F5C;
+  border-radius: 50px;
+  height: 1080px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-container .content5 .message {
+  text-align: left;
+  margin: 0rem 10rem 0px 12rem;
+}
+.content-container .content5 h1 {
+  font-size: 48px;
+}
+.content-container .content5 h2 {
+  font-size: 20px;
+}
+.content-container .content5 .appframe {
+  margin-right: 10rem;
+}/*# sourceMappingURL=juantap.css.map */
